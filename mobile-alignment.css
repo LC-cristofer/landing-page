@@ -1,0 +1,29 @@
+/* Mobile alignment refinement: keep the landing editorial and easier to scan. */
+@media (max-width: 900px) {
+  .hero-copy {
+    text-align: left;
+  }
+
+  .hero-lead {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-actions,
+  .proof-line {
+    justify-content: flex-start;
+  }
+
+  .closing {
+    text-align: left;
+  }
+
+  .closing h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .closing-actions {
+    justify-content: flex-start;
+  }
+}
