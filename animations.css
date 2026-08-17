@@ -1,0 +1,31 @@
+/* Scroll reveal em cascata para os cards da landing page. */
+.cascade-item {
+  opacity: 0;
+  transform: translate3d(-34px, 0, 0);
+  transition:
+    opacity 620ms cubic-bezier(.22,.75,.18,1),
+    transform 620ms cubic-bezier(.22,.75,.18,1);
+  transition-delay: var(--cascade-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.cascade-item.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 620px) {
+  .cascade-item {
+    transform: translate3d(-26px, 0, 0);
+    transition-duration: 560ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cascade-item,
+  .cascade-item.is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
