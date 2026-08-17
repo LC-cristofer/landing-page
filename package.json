@@ -1,0 +1,12 @@
+{
+  "name": "lucas-linkpage",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "serve . -l 5500",
+    "start": "serve . -l 5500"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
